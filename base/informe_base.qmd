@@ -1,0 +1,41 @@
+---
+title: "Título del informe"
+subtitle: "Subtítulo del informe"
+author: "Jesús F. García Gavilán"
+date: today
+lang: es
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme:
+      - cosmo
+      - styles.scss
+    code-fold: true
+    code-tools: true
+    df-print: paged
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    fig-cap-location: bottom
+    include-in-header: preambulo.tex
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+source("report_theme.R")
+
+knitr::opts_chunk$set(
+  fig.align = "center",
+  fig.width = 8,
+  fig.height = 5,
+  dpi = 300
+)

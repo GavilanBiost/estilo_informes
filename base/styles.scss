@@ -1,0 +1,64 @@
+/*-- scss:defaults --*/
+
+$primary: #1F4E5F;
+$secondary: #6A8D92;
+$body-color: #222222;
+$link-color: #1F4E5F;
+$font-size-base: 1rem;
+$line-height-base: 1.65;
+
+/*-- scss:rules --*/
+
+body {
+  text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  border-bottom: 2px solid $primary;
+  padding-bottom: 0.35em;
+  margin-top: 1.8em;
+}
+
+h2 {
+  margin-top: 1.6em;
+}
+
+h3 {
+  color: $secondary;
+}
+
+#TOC {
+  background-color: #F7F9FA;
+  border-left: 4px solid $primary;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+pre {
+  border-left: 4px solid $secondary;
+  border-radius: 6px;
+}
+
+blockquote {
+  border-left: 4px solid $primary;
+  background-color: #F7F9FA;
+  padding: 1em;
+}
+
+caption {
+  color: $primary;
+  font-weight: bold;
+  text-align: center;
+}
+
+thead {
+  border-bottom: 2px solid $primary;
+}
+
+th {
+  color: $primary;
+}

@@ -1,0 +1,96 @@
+% ============================================================
+% PREÁMBULO PDF - Plantilla de informes García
+% ============================================================
+
+% Márgenes
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+% Colores
+\usepackage{xcolor}
+\definecolor{principal}{HTML}{1F4E5F}
+\definecolor{secundario}{HTML}{6A8D92}
+\definecolor{gristexto}{HTML}{333333}
+\definecolor{grisclaro}{HTML}{F3F4F6}
+
+% Fuentes y espaciado
+\usepackage{setspace}
+\onehalfspacing
+
+% Títulos
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\Large\bfseries\color{principal}}
+  {\thesection}
+  {0.8em}
+  {}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{principal}}
+  {\thesubsection}
+  {0.8em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{secundario}}
+  {\thesubsubsection}
+  {0.8em}
+  {}
+
+\titlespacing*{\section}{0pt}{2.2em}{1em}
+\titlespacing*{\subsection}{0pt}{1.6em}{0.7em}
+\titlespacing*{\subsubsection}{0pt}{1.2em}{0.5em}
+
+% Encabezado y pie de página
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% Encabezado
+\fancyhead[L]{\small Informe reproducible}
+\fancyhead[R]{\small \nouppercase{\leftmark}}
+
+% Pie de página
+\fancyfoot[L]{\small García}
+\fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+\fancyfoot[R]{\small \today}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Tablas
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{caption}
+
+\captionsetup{
+  labelfont=bf,
+  textfont=it,
+  font=small,
+  justification=centering
+}
+
+% Código
+\usepackage{fancyvrb}
+\usepackage{framed}
+
+% Enlaces
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=principal,
+  urlcolor=principal,
+  citecolor=principal
+}
+
+% Párrafos
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+% Evitar cortes feos en tablas y figuras
+\usepackage{placeins}
