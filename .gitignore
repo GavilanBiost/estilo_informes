@@ -48,3 +48,6 @@ Thumbs.db
 *.out
 *.lof
 *.lot
+
+# Archivos temporales de macOS
+._*
