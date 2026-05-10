@@ -1,0 +1,50 @@
+# Archivos de RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Archivos temporales de R
+*.RData
+*.rds
+*.Rhistory
+
+# Salidas generadas
+*.html
+*.pdf
+*.docx
+*.pptx
+
+# Carpetas generadas por R Markdown / Quarto
+*_files/
+*_cache/
+_cache/
+_freeze/
+.quarto/
+
+# Datos privados o pesados
+data/
+datos/
+output/
+outputs/
+results/
+resultados/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# LaTeX temporales
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
